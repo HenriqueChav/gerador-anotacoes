@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Anotações</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Sistema de Anotações</h1>  
+    </header>
+    
+    <main>
+        <section class="main-section">
+            <fieldset class="form-control">
+                <label for="nome">Nome</label>
+                <input class="mainInfoInput" id="nome" type="text" data-input-name>
+            </fieldset>
+            <fieldset class="form-control">
+                <label for="dataNasc">Data de Nascimento</label>
+                <input class="mainInfoInput" id="dataNasc" type="text" data-input-date>
+            </fieldset>
+        </section>
+
+        <section class="tbl-section">
+            <table class="tbl-annotation" data-table>
+                <thead>
+                    <tr>
+                        <th class="tbl-day">Dia</th>
+                        <th class="tbl-hour">Hora</th>
+                        <th class="tbl-description">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody data-table-body>
+                    <tr>
+                        <td><input type="text" placeholder="Data"></td>
+                        <td><input type="text" placeholder="Horário"></td>
+                        <td><textarea rows="8" placeholder="Descrição aqui..."></textarea></td>
+                    </tr>
+                </tbody>        
+            </table>
+        </section>
+
+        <section class="btn-section">
+            <button class="btn-add-annotation" data-button-add>Adicionar Linha</button>
+            <button class="btn-remove-annotation" data-button-remove>Excluir Linha</button>
+            <button class="btn-create-pdf" data-button-create-pdf>Criar PDF</button>
+        </section>
+    </main>
+
+    <script src="js/addAndRemove.js"></script>
+    <script src="js/createPDF.js"></script>
+</body>
+</html>

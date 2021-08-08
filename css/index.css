@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 5vh 0 5vh;
+}
+
+.main-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    line-height: 8vh;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.form-control label, .form-control input {
+    display: block;
+    margin: 1vh auto;
+    text-align: center;
+    width: 40vw;
+    font-size: 1rem;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+.form-control input {
+    padding: 1vh 0;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.tbl-annotation {
+    font-size: 1rem;
+    width: 100%;
+    border: 2px solid black;
+    margin: 2vh 0;
+    line-height: 3vh;
+}
+
+.tbl-annotation thead {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(71, 71, 71);
+}
+
+.tbl-day, .tbl-hour {
+    width: 25%;
+}
+
+.tbl-description {
+    width: 50%;
+}
+
+.tbl-annotation tr, .tbl-annotation td{
+    border: 2px solid rgb(71, 71, 71);
+    overflow: hidden;
+}
+
+.tbl-annotation input, .tbl-annotation textarea {
+    border: none;
+    vertical-align: top;
+    width: 100%;
+}
+
+.tbl-annotation input {
+    border-bottom: 2px solid black;
+    padding: 2vh 0;
+}
+
+.tbl-annotation input[type=text] {
+    position: relative;
+    top: 0.8vh;
+}
+
+.tbl-annotation textarea {
+    resize: vertical;
+}
+
+.tbl-annotation input:focus, .tbl-annotation textarea:focus {
+    background-color: rgb(218, 218, 218);
+}
+
+.btn-section {
+    display: block;
+    margin: 2vh auto 10vh;
+    width: 40vw;
+    text-align: center;
+}
+
+.btn-section button{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add-annotation {
+    background-color: royalblue;
+}
+
+.btn-remove-annotation {
+    background-color: red;
+}
+
+.btn-create-pdf {
+    background-color: springgreen;
+}
+
+
+
+@media (max-width: 712px) {
+
+main {
+    width: 90vw;
+}
+
+.form-control label, .form-control input {
+    width: 60vw;
+}
+
+.btn-section {
+    width: 70vw;
+}
+
+.btn-section button {
+    padding: 0.65rem;
+}
+
+.tbl-annotation input[type=text] {
+    position: relative;
+    top: 0.7vh;
+}
+
+}
